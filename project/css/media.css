@@ -1,0 +1,156 @@
+@media (max-width: 1399px) {
+    .container {
+        padding: 0 100px;
+    }
+
+    .header__container {
+        flex-wrap: wrap;
+        padding-top: 28px;
+        padding-bottom: 0px;
+    }
+
+    .header__logo {
+        order: 1;
+        width: 14%;
+        margin-bottom: 24px;
+    }
+
+    .header__search {
+        order: 2;
+        margin-bottom: 24px;
+    }
+
+    .nav {
+        order: 3;
+        padding-top: 22px;
+        padding-bottom: 22px;
+        width: 100%;
+        border-top: 1px solid #E6E8EC;
+        border-bottom: 1px solid #E6E8EC;
+    }
+
+    .nav__list {
+        justify-content: space-between;
+    }
+
+    .hero__figure-picture img {
+        padding-bottom: 35px;
+    }
+
+    .hero__title {
+        padding-top: 90px;
+    }
+
+    .hero__desc {
+        margin-bottom: 4%;
+    }
+
+    .hero__content-left {
+        max-width: 67%;
+    }
+}
+
+  @media (max-width: 991px) {
+    .container {
+        padding-left:  114px;
+        padding-right:  114px;
+    }
+
+    .header__logo {
+        width: 21%;
+    }
+
+    .nav__item {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .nav__list {
+        column-gap: 0;
+    }
+
+    .hero__figure-picture{
+        display: none;
+    }
+
+    .hero__content-left {
+        max-width: 100%;
+    }
+
+
+
+  }
+
+  /* @media (max-width: 480px) { */
+  /* @media (max-width: 575px) { */
+  @media (max-width: 663px) {
+    .offcet-title {
+        padding-top: 40px;
+    }
+
+    .btn {
+        padding: 17px 45px;
+        font-size: 16px;
+    }
+
+    .container {
+        padding-left:  32px;
+        padding-right:  32px;
+
+    }
+
+    .header__container {
+        padding-top: 15px;
+        /* padding-top: 22px; */
+    }
+
+    .header__logo {
+        margin-bottom: 12px;
+    }
+
+    .header__logo {
+        width: 34%;
+        /* align-items: center; */
+    }
+
+    .nav {
+        width: 105%;
+        padding-top: 17px;
+        padding-bottom: 17px;
+    }
+
+    .nav__list {
+        column-gap: 28px;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .header__search {
+        margin-bottom: 12px;
+    }
+
+    .hero__title {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 32px;
+        margin-bottom: 6px;
+    }
+
+    .hero__title span {
+        font-size: 32px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 32px;
+    }
+
+    .hero__desc {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        margin-bottom: 20px;
+    }
+
+
+
+
+  }
