@@ -1,6 +1,7 @@
 @media (max-width: 1399px) {
     .container {
-        padding: 0 100px;
+      padding-left: 100px;
+      padding-right: 100px;
     }
 
     .header__container {
@@ -37,9 +38,6 @@
         padding-bottom: 35px;
     }
 
-    .hero__title {
-        padding-top: 90px;
-    }
 
     .hero__desc {
         margin-bottom: 4%;
@@ -47,6 +45,8 @@
 
     .hero__content-left {
         max-width: 67%;
+        padding-top: 90px;
+        padding-bottom: 90px;
     }
 }
 
@@ -77,15 +77,29 @@
         max-width: 100%;
     }
 
-
+    .podcasts__list {
+      --offsets: 0;
+    }
 
   }
 
   /* @media (max-width: 480px) { */
   /* @media (max-width: 575px) { */
   @media (max-width: 663px) {
-    .offcet-title {
-        padding-top: 40px;
+
+    h2 {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+
+    h3 {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 16px;
+    }
+    .offset-section {
+        padding-top: 54px;
     }
 
     .btn {
@@ -101,7 +115,6 @@
 
     .header__container {
         padding-top: 15px;
-        /* padding-top: 22px; */
     }
 
     .header__logo {
@@ -110,7 +123,6 @@
 
     .header__logo {
         width: 34%;
-        /* align-items: center; */
     }
 
     .nav {
@@ -128,6 +140,11 @@
     .header__search {
         margin-bottom: 12px;
     }
+
+    .hero__content-left {
+      padding-top: 40px;
+      padding-bottom: 40px;
+  }
 
     .hero__title {
         font-size: 32px;
@@ -151,6 +168,36 @@
     }
 
 
+  }
 
+  @media (max-width: 380px) {
+    .podcasts__card-link  {
+      flex-direction: column;
 
+      width: 100%;
+    }
+
+    .podcasts__card-date {
+      top: -1px;
+      bottom: auto;
+    }
+
+    .podcasts__title {
+      margin-bottom: 20px;
+    }
+
+    .podcasts__card-content {
+      padding: 26px 0 31px 16px;
+    }
+
+    .podcasts__card-desc {
+      font-size: 12px;
+      line-height: 12px;
+    }
+
+    .podcasts__card-image {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
   }
