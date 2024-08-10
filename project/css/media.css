@@ -2,6 +2,10 @@
   .broadcasts__list {
     --offsets: 1;
   }
+
+  .guests__card-desc {
+    width: 100%;
+  }
 }
 
 @media (max-width: 1399px) {
@@ -61,6 +65,8 @@
   }
 
 
+
+
 }
 
 @media (max-width: 991px) {
@@ -100,6 +106,7 @@
 
   .broadcasts__container {
     flex-direction: column;
+    padding-bottom: 32px;
   }
 
   .broadcasts__title {
@@ -142,6 +149,27 @@
   .broadcasts__left-arhive-btn {
     margin-bottom: 6px;
   }
+
+  .guests__card {
+    flex-direction: column;
+  }
+
+  .guests__desc {
+    width: 100%;
+  }
+
+  .guests__card-image {
+    max-width: 540px;
+    /* background-size: contain; */
+
+
+  }
+
+  .guests__card-desc {
+    width: 67%;
+}
+
+
 }
 
   /* @media (max-width: 480px) { */
@@ -238,6 +266,44 @@
   .broadcasts__title {
     margin-bottom: 30px;
   }
+
+  .guests__havesome {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+  }
+
+  .guests__desc {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.4px;
+  }
+
+  .guests__card-image {
+    max-width: 256px;
+  }
+
+  .guests__card-title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+
+  .guests__card-desc {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28.8px;
+  }
+
+  .guests__btn {
+    padding: 9.5px 14.5px;
+  }
+
+  .guests__card-desc {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
 }
 
 @media (max-width: 420px) {
@@ -278,6 +344,10 @@
 
   .broadcasts__list {
     --offsets: 1;
+  }
+
+  .broadcasts__container {
+    padding-bottom: 48px;
   }
 
   .broadcasts__item {
@@ -321,11 +391,9 @@
   }
 
   .broadcasts__left-arhive::before {
-    /* left: -107px; */
     left: -43%;
     top: 4px;
   }
-
 
   .broadcasts__left-arhive-wrapper {
     display: flex;
@@ -357,5 +425,31 @@
   .broadcasts__list  {
     padding-bottom: 30px;
   }
+
+  .guests__list {
+    gap: 30px;
+  }
+
+  .guests__havesome {
+    margin-bottom: 0;
+  }
+
+  .guests__desc {
+    margin-bottom: 27px;
+  }
+
+  .guests__card {
+    gap: 11px;
+  }
+
+
+
+  .guests__btn {
+    width: 150px;
+  }
+  .guests__card-content {
+    /* min-height: 376px; */
+  }
+
 
 }
