@@ -46,7 +46,8 @@
 
 
   .hero__desc {
-    margin-bottom: 3%;
+    /* margin-bottom: 3%; */
+    margin-bottom: 20px;
   }
 
   .hero__content {
@@ -56,7 +57,7 @@
   }
 
   .hero__container::after {
-    margin-bottom: 8px;
+    /* margin-bottom: 8px; */
     scale: 0.71;
     transform: translateX(10px);
     /* padding-top: 90px; */
@@ -91,9 +92,9 @@
     display: none;
   }
 
-  .hero__figure-picture{
+  /* .hero__figure-picture{
       display: none;
-  }
+  } */
 
   .hero__content {
       max-width: 100%;
@@ -115,10 +116,10 @@
     display: none;
   }
 
-  .broadcasts__title-hidden {
+  /* .broadcasts__title-hidden {
     display: block;
     margin-bottom: 109px;
-  }
+  } */
 
   .broadcasts__left {
     order: 1;
@@ -196,8 +197,8 @@
 
   .nav {
       width: 105%;
-      padding-top: 19px;
-      padding-bottom: 19px;
+      padding-top: 14px;
+      padding-bottom: 14px;
   }
 
   .nav__list {
@@ -211,16 +212,23 @@
   }
 
   .hero__content {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 44px;
+    padding-bottom: 36px;
   }
 
   .hero__title {
       font-size: 32px;
       font-weight: 700;
       line-height: 32px;
-      margin-bottom: 6px;
+      margin-bottom: 7px;
   }
+
+  .hero__desc {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-bottom: 20px;
+}
 
   .hero__title span {
       font-size: 32px;
@@ -229,24 +237,23 @@
       line-height: 32px;
   }
 
+  .podcasts__card-title {
+    margin-bottom: 5px;
+  }
+
   .broadcasts__card-content {
     padding: 10px 13px 12px 10px ;
   }
 
-  .hero__desc {
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 21px;
-      margin-bottom: 20px;
-  }
+
 
 }
 
 @media (max-width: 420px) {
 
   .offset-section {
-    padding-top: 54px;
-    padding-bottom: 61px;
+    padding-top: 55px;
+    padding-bottom: 55px;
   }
 
   .podcasts__card-link  {
@@ -287,10 +294,10 @@
   }
 
 
-  .broadcasts__title-hidden {
+  /* .broadcasts__title-hidden {
     display: block;
     margin-bottom: 30px;
-  }
+  } */
 
   .broadcasts__list {
     padding-top: 0;

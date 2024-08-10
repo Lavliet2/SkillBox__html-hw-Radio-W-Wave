@@ -253,9 +253,9 @@ ul {
   /* justify-content: space-between */
 }
 
-.hero__content-right {
+/* .hero__content-right {
   align-items: center;
-}
+} */
 
 .hero__title{
   margin-bottom: 12px;
@@ -366,9 +366,9 @@ ul {
   margin-right: 32px;
 }
 
-.broadcasts__title-hidden {
+/* .broadcasts__title-hidden {
   display: none;
-}
+} */
 
 .broadcasts__left-arhive-img {
   display: block;
@@ -420,7 +420,7 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px 10px 20px 16px;
+  padding: 20px 10px 20px 14px;
   cursor: default;
   height: 100%;
 }
