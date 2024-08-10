@@ -209,10 +209,13 @@ ul {
 
 
 .header__search {
-  display: flex;
+  /* display: flex; */
   justify-content: flex-end;
   transition: stroke 0.3s ease-in-out, fill 0.3s ease-in-out;
   outline: none;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
 }
 
 .header__search:focus svg path,
@@ -227,14 +230,27 @@ ul {
 }
 
 /* hero */
-.hero__content {
+.hero__container {
   justify-content: space-between;
 }
 
-.hero__content-left {
+.hero__container::after {
+  content: '';
+  width: 100%;;
+  background-image: url("/img/hero-microphone.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 13px;
+  transform: translateX(55px);
+}
+
+.hero__content {
+  /* justify-content: space-between; */
+  /* position: relative; */
   max-width: 58%;
   padding-top: 94px;
   padding-bottom: 94px;
+  /* justify-content: space-between */
 }
 
 .hero__content-right {
@@ -242,11 +258,11 @@ ul {
 }
 
 .hero__title{
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 .hero__desc {
-  margin-bottom: 45px;
+  margin-bottom: 42px;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -270,8 +286,13 @@ ul {
   background-color: var(--white-color);
 }
 
+.podcasts__card {
+  height: 100%;
+}
+
 .podcasts__card-image {
   object-fit: cover;
+  min-width: 112px;
 }
 
 .podcasts__card-date {
