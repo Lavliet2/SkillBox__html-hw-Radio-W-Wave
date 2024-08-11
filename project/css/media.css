@@ -6,6 +6,10 @@
   .guests__card-desc {
     width: 100%;
   }
+
+  .playlists__container{
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 1399px) {
@@ -64,6 +68,37 @@
     transform: translateX(10px);
   }
 
+  .playlists__main-list {
+    --offsets: 2;
+  }
+
+  .playlists__main-card {
+    flex-direction: row;
+  }
+
+  .playlists__main-item {
+    max-height: 112px;
+  }
+
+  .playlists__main-card-image {
+    max-width: 112px;
+  }
+
+  .img-flag {
+    left: 0;
+  }
+
+  .playlists__main-card-content {
+    padding: 40px 5px 40px 14px;
+  }
+
+  .playlists__main-card-content  {
+    min-width: 146px;
+  }
+
+  .playlists__container {
+    gap: 12px;
+  }
 
 
 
@@ -160,21 +195,20 @@
 
   .guests__card-image {
     max-width: 540px;
-    /* background-size: contain; */
-
-
   }
 
   .guests__card-desc {
     width: 67%;
-}
+  }
 
-
+  .playlists__main-list {
+    --offsets: 1;
+  }
 }
 
   /* @media (max-width: 480px) { */
   /* @media (max-width: 575px) { */
-@media (max-width: 663px) {
+@media (max-width: 680px) {
   h2 {
     font-size: 24px;
     font-weight: 400;
@@ -304,13 +338,56 @@
     margin-bottom: 30px;
   }
 
+  .playlists__main-card {
+    flex-direction: column;
+  }
+
+  .playlists__main-item {
+    max-height: none;
+  }
+
+
+  .playlists__main-card-image {
+    max-width: none;
+    width: 100%;
+  }
+
+  .playlists__main-card-content {
+    max-width: none;
+    width: 100%;
+  }
+
+  .playlists__main-card {
+    max-width: none;
+    width: 100%;
+  }
+
+  .playlists__main-list {
+    --offsets: 2;
+  }
+
+  .playlists__main-card-content {
+    padding: 10px;
+  }
+
+  .playlists__main-card-title {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .playlists__main-card-desc {
+    font-size: 9px;
+    line-height: 9px;
+  }
+
+
+
 }
 
-@media (max-width: 420px) {
-
+@media (max-width: 460px) {
   .offset-section {
     padding-top: 55px;
-    padding-bottom: 55px;
+    padding-bottom: 53px;
   }
 
   .podcasts__card-link  {
@@ -442,13 +519,28 @@
     gap: 11px;
   }
 
-
-
   .guests__btn {
     width: 150px;
   }
-  .guests__card-content {
-    /* min-height: 376px; */
+
+  .playlists__main-list {
+    --offsets: 1;
+  }
+
+  .playlists__head-desc {
+    min-width: 256px;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+  }
+
+  .playlists__head-copy {
+    font-size: 12px;
+  }
+
+  .img-flag {
+    left: auto;
+    right: 0;
   }
 
 

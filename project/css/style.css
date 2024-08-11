@@ -392,8 +392,6 @@ ul {
 
 .broadcasts__left-arhive {
   position: relative;
-  /* padding-left: 60px; */
-
 }
 
 .broadcasts__left-arhive-img {
@@ -581,7 +579,122 @@ ul {
   background-color: var(--active-color);
 }
 
+/* playlists */
+.playlists__container {
+  justify-content: space-between;
+  gap: var(--gap);
+}
 
+.playlists__head-title {
+  margin-bottom: 12px;
+}
+
+.playlists__head-desc {
+  line-height: 22px;
+  min-width: 350px;
+}
+
+.playlists__head-copy {
+  margin-bottom: 6px;
+  font-style: italic;
+  line-height: 22px;
+  font-weight: 300;
+}
+
+.playlists__head svg {
+  /* mb37 */
+}
+
+.playlists__main {
+  padding-top: 14px;
+}
+
+.playlists__main-list {
+  flex-wrap: wrap;
+  --offsets: 3;
+  gap: var(--gap);
+}
+
+.playlists__main-item {
+  position: relative;
+  cursor: pointer;
+  border: 1px solid var(--bg-gray-color);
+  width: calc((100% - (var(--gap) * var(--offsets))) / (var(--offsets) + 1));
+  transition: background-color 0.3s ease-in-out;
+}
+
+.playlists__main-card:hover {
+  background-color: var(--hover-color);
+}
+
+.playlists__main-card:hover h3 {
+  color: var(--white-color);
+}
+
+.playlists__main-card:focus {
+  background-color: var(--focus-color);
+  outline: none;
+}
+
+.playlists__main-card:focus h3 {
+  color: var(--white-color);
+}
+
+.playlists__main-card:active {
+  background-color: var(--active-color);
+}
+
+.playlists__main-card:active h3 {
+  color: var(--white-color);
+}
+
+.playlists__main-card:active p {
+  color: var(--font-grey);
+}
+
+.playlists__main-card {
+  flex-direction: column;
+}
+
+.playlists__main-card-image {
+  width: 100%;
+}
+
+.img-flag{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.img-flag-ru {
+  background-image: url('/img/playlists-card-flag-ru.png');
+}
+
+.img-flag-en {
+  background-image: url('/img/playlists-card-flag-en.png');
+}
+
+.playlists__main-card-title {
+  margin-bottom: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+
+}
+
+.playlists__main-card-desc {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.playlists__main-card-content {
+  padding: 15px;
+}
 
 
 
