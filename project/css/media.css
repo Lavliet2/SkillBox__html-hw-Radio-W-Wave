@@ -1,4 +1,4 @@
-@media (max-width: 1550px) {
+@media (max-width: 1600px) {
   .broadcasts__list {
     --offsets: 1;
   }
@@ -9,6 +9,15 @@
 
   .playlists__container{
     flex-direction: column;
+  }
+
+  .wave__image-new {
+    width: 25%;
+    top: -25px;
+  }
+
+  .wave__content {
+    max-width: 48%;
   }
 }
 
@@ -100,8 +109,9 @@
     gap: 12px;
   }
 
-
-
+  .wave__image {
+    align-self: center;
+  }
 }
 
 @media (max-width: 991px) {
@@ -203,6 +213,37 @@
 
   .playlists__main-list {
     --offsets: 1;
+  }
+
+  .playlists__container {
+    padding-bottom: 112px;
+  }
+
+  .wave__container  {
+    flex-direction: column;
+    padding-top: 54px;
+    gap: 50px;
+  }
+
+  .wave__borderwave {
+    margin-bottom: 16px;
+  }
+
+  .wave__title {
+    max-width: 90%;
+  }
+
+  .wave__image-new {
+    width: 30%;
+    top: 0;
+  }
+
+  .wave__content {
+    max-width: 100%;
+  }
+
+  .wave__desc::before {
+    height: 22%;
   }
 }
 
@@ -380,8 +421,9 @@
     line-height: 9px;
   }
 
-
-
+  .wave__image-new {
+    width: 20%;
+  }
 }
 
 @media (max-width: 460px) {
@@ -543,5 +585,49 @@
     right: 0;
   }
 
+  .wave__image-new {
+    width: 25%;
+    top: -36px;
+  }
 
+  .wave__container {
+    padding-top: 46px;
+  }
+
+  .wave__title {
+    max-width: 100%;
+  }
+
+  .wave__title {
+    margin-bottom: 41px;
+  }
+
+  .wave__desc, .wave__desc2 {
+    font-size: 14px;
+    line-height: 22.4px;
+  }
+
+  .wave__desc::before {
+    height: 10%;
+  }
+
+  .wave__desc {
+    margin-bottom: 9px;
+  }
+
+  .wave__desc2 {
+    margin-bottom: 10px;
+  }
+
+  .wave__price {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .wave__btn {
+    padding: 17px 16px 17px 40px;
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
