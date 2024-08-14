@@ -11,9 +11,8 @@
     flex-direction: column;
   }
 
-  .wave__image-new {
+  .wave__image::after {
     width: 25%;
-    top: -25px;
   }
 
   .wave__content {
@@ -77,6 +76,10 @@
     transform: translateX(10px);
   }
 
+  .playlists__head-copy {
+    margin-bottom: 40px;
+  }
+
   .playlists__main-list {
     --offsets: 2;
   }
@@ -93,7 +96,7 @@
     max-width: 112px;
   }
 
-  .img-flag {
+  .playlists__main-card::before {
     left: 0;
   }
 
@@ -233,7 +236,7 @@
     max-width: 90%;
   }
 
-  .wave__image-new {
+  .wave__image::after {
     width: 30%;
     top: 0;
   }
@@ -421,9 +424,9 @@
     line-height: 9px;
   }
 
-  .wave__image-new {
+  /* .wave__image-new {
     width: 20%;
-  }
+  } */
 }
 
 @media (max-width: 460px) {
@@ -580,18 +583,18 @@
     font-size: 12px;
   }
 
-  .img-flag {
+  .playlists__main-card::before {
     left: auto;
     right: 0;
   }
 
-  .wave__image-new {
+  .wave__image::after {
     width: 25%;
-    top: -36px;
   }
 
   .wave__container {
-    padding-top: 46px;
+    padding-top: 58px;
+    gap: 38px
   }
 
   .wave__title {
@@ -620,7 +623,7 @@
   }
 
   .wave__price {
-    margin-bottom: 20px;
+    margin-bottom: 36px;
     font-size: 24px;
     line-height: 24px;
   }
