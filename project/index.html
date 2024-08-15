@@ -24,7 +24,6 @@
           <li class="nav__item"><a href="#about-us"  class="nav__link">О&nbsp;нас</a></li>
         </ul>
       </nav>
-      <!-- <a href="#search" class="header__search" aria-label="Поиск"> -->
         <button class="header__search btn-reset">
           <svg id="search" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -618,6 +617,96 @@
             Купить на Яндекс.Маркет
           </a>
         </div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="container about__container flex offset-section">
+        <div class="about__head">
+          <h2 class="about__head-title">
+            О&nbsp;нас
+          </h2>
+          <p class="about__head-desc">
+            Приём-приём! Как слышно? Мы&nbsp;уже в&nbsp;эфире?
+            Отлично, поехали!
+          </p>
+          <p class="about__head-desc2">
+            Друзья, мы&nbsp;будем очень рады,
+            если вы&nbsp;поможете стать нам лучше.
+            Нам важен каждый слушатель, поэтому вы&nbsp;можете
+            поделиться обратной связью о&nbsp;наших предеачах,
+            темах, подборках и&nbsp;вообще обо всём! Это можно
+            сделать либо написав нам в&nbsp;форме ниже,
+            либо кликнув на&nbsp;наши соцсети в&nbsp;подвале сайта.
+            Спасибо! Услышимся!:)
+          </p>
+        </div>
+        <ul class="about__list list-reset flex">
+          <li class="about__item">
+            <article class="about__card">
+              <picture class="">
+                <source media="(max-width: 991px)" srcset="img/about-card-1.png">
+                <source media="(max-width: 1399px)" srcset="img/about-card-1.1024.png">
+                <img src="img/about-card-1.png" alt="Фото Дмитрия Гутенбергнего" class="about__card-image">
+              </picture>
+              <h3 class="about__card-title">Дмитрий Гутенберг</h3>
+              <p class="about__card-desc">
+                Эксперт (ну, почти) по&nbsp;всем вопросам (почти)
+              </p>
+            </article>
+          </li>
+          <li class="about__item">
+            <article class="about__card">
+              <picture class="">
+                <source media="(max-width: 991px)" srcset="img/about-card-2.png">
+                <source media="(max-width: 1399px)" srcset="img/about-card-2.1024.png">
+                <img src="img/about-card-2.png" alt="Фото Анны Васильевны" class="about__card-image">
+              </picture>
+              <h3 class="about__card-title">Анна Васильева</h3>
+              <p class="about__card-desc">
+                Как я&nbsp;здесь оказалась? А&nbsp;главное&nbsp;&mdash; зачем?
+              </p>
+            </article>
+          </li>
+          <li class="about__item">
+            <article class="about__card">
+              <picture class="">
+                <source media="(max-width: 991px)" srcset="img/about-card-3.png">
+                <source media="(max-width: 1399px)" srcset="img/about-card-3.1024.png">
+                <img src="img/about-card-3.png" alt="Фото Петра Дмитриевского" class="about__card-image">
+              </picture>
+              <h3 class="about__card-title">Пётр Дмитриевский</h3>
+              <p class="about__card-desc">
+                Господа! Внимание! Благодарю за&nbsp;внимание!
+              </p>
+            </article>
+          </li>
+          <li class="about__item">
+            <article class="about__card">
+              <picture class="">
+                <source media="(max-width: 991px)" srcset="img/about-card-4.png">
+                <source media="(max-width: 1399px)" srcset="img/about-card-4.1024.png">
+                <img src="img/about-card-4.png" alt="Фото Татьяны Флегановой" class="about__card-image">
+              </picture>
+              <h3 class="about__card-title">Татьяна Флеганова</h3>
+              <p class="about__card-desc">
+                Одна я&nbsp;в&nbsp;пальто стою красивая, а&nbsp;вокруг...
+              </p>
+            </article>
+          </li>
+        </ul>
+        <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="form flex">
+          <textarea class="form__textarea-mail" name="message" placeholder="Что скажете?" aria-label="Поле ввода"></textarea>
+          <div class="form__wrapper flex">
+            <input class="form__input" name="name" type="text" placeholder="Имя" required aria-label="Поле ввода">
+            <input class="form__input" name="email" type="email" placeholder="Email" required aria-label="Поле ввода">
+          </div>
+          <button class="form__btn btn btn-reset">Отправить</button>
+          <label class="form__checkbox" role="checkbox">
+            <input class="form__checkbox-input" type="checkbox" required>
+            <span class="form__checkbox-text">Согласен на обработку персональных данных</span>
+          </label>
+
+        </form>
       </div>
     </section>
 

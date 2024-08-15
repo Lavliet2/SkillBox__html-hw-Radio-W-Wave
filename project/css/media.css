@@ -18,6 +18,10 @@
   .wave__content {
     max-width: 48%;
   }
+
+  .about__card-image {
+    /* max-width: 90%; */
+  }
 }
 
 @media (max-width: 1399px) {
@@ -115,6 +119,32 @@
   .wave__image {
     align-self: center;
   }
+
+  .wave__container {
+    padding-bottom:  119px;
+  }
+
+  .about__head {
+    width: 65%;
+  }
+
+  .about__list {
+    --offsets: 1;
+  }
+
+  .about__card-image {
+    width: 100%;
+  }
+
+  .form {
+    max-width: 100%;
+  }
+
+.about__head::after {
+  background-image: url("/img/about__figure-dawn.svg");
+}
+
+
 }
 
 @media (max-width: 991px) {
@@ -173,7 +203,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-}
+  }
 
   .broadcasts__left {
     order: 1;
@@ -248,6 +278,37 @@
   .wave__desc::before {
     height: 22%;
   }
+
+  .about__head {
+    margin-bottom: 26.1%;
+    /* margin-bottom: 141px; */
+    width: 100%;
+  }
+
+  .about__head::after {
+    content: '';
+    position: absolute;
+    top: unset;
+    bottom: -110%;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("/img/about__figure-vector.svg");
+  }
+
+  .form__wrapper {
+    flex-direction: column;
+    gap: var(--gap);
+  }
+
+  .form__input {
+    width: 100%;
+  }
+
+
+
 }
 
   /* @media (max-width: 480px) { */
@@ -390,7 +451,6 @@
     max-height: none;
   }
 
-
   .playlists__main-card-image {
     max-width: none;
     width: 100%;
@@ -424,9 +484,49 @@
     line-height: 9px;
   }
 
-  /* .wave__image-new {
-    width: 20%;
-  } */
+  .about__head-desc {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .about__head-desc2 {
+    font-size: 14px;
+    line-height: 21.9px;
+  }
+
+  .about__card-title {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+  }
+
+  .about__card-desc {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .form__textarea-mail,
+  .form__input {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .form__btn {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .form__checkbox-text {
+    font-size: 9px;
+    line-height: 9px;
+  }
+
+  .form__checkbox-text {
+    position: absolute;
+    transform: translateY(-7px);
+  }
+
+
 }
 
 @media (max-width: 460px) {
@@ -588,6 +688,10 @@
     right: 0;
   }
 
+  .wave__container {
+    padding-bottom:  71px;
+  }
+
   .wave__image::after {
     width: 25%;
   }
@@ -633,4 +737,41 @@
     font-size: 16px;
     line-height: 16px;
   }
+
+  .about__head {
+    margin-bottom: 0;
+  }
+
+  .about__head::after {
+    display: none;
+  }
+
+  .about__head-desc {
+    margin-bottom: 4px;
+  }
+
+  .about__card-image {
+    margin-bottom: 9px;
+  }
+
+  .about__card-title {
+    margin-bottom: 4px;
+  }
+
+  .form__textarea-mail {
+    min-height: 150px;
+    padding: 17px 24px;
+    border-radius: 20px;
+  }
+
+  .form__input {
+    padding: 16px 24px;
+  }
+
+  .form__btn {
+    padding: 17px 44.5px;
+    max-width: 172px;
+  }
+
+
 }

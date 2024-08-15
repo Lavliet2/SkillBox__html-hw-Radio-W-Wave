@@ -67,11 +67,6 @@ img {
 
 /* glob */
 .container {
-  /* max-width: 1440px; */
-  /* padding: 0 165px; */
-  /* max-width: 1920px; */
-  /* padding: 0 405px; */
-  /* max-width: 1110px; */
   padding: 0 21%;
   margin: 0 auto;
   width: 100%;
@@ -502,7 +497,6 @@ ul {
   color: var(--text-desc-color);
 }
 
-
 .guests__container {
   background-color: var(--text-color);
 }
@@ -713,6 +707,7 @@ ul {
 }
 
 .wave__container {
+  padding-bottom:  154px;
   background-color: var(--dark-bg-color);
   justify-content: space-between;
   gap: var(--gap);
@@ -831,15 +826,203 @@ ul {
   display: block;
 }
 
-/* .wave__image-new {
+/* about */
+.about h1,
+.about h2,
+.about h3 {
+  color: var(--white-color);
+}
+
+.about p {
+  color: var(--text-desc-color);
+}
+
+.about {
+  background-color: var(--text-color);
+}
+
+.about__container {
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+.about__head {
+  position: relative;
+  width: 58%;
+}
+
+.about__head::after {
+  content: '';
   position: absolute;
   top: 0px;
-  left: 0px;
-} */
+  right: -103%;
+  min-width: 100%;
+  min-height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("/img/about__figure.svg");
+}
 
+.about__head-title {
+  margin-bottom: 12px;
+}
 
+.about__head-desc {
+  margin-bottom: 6px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+}
 
+.about__head-desc2 {
+  font-size: 20px;
+  line-height: 32px;
+}
 
+.about__list {
+  gap: var(--gap);
+  flex-wrap: wrap;
+  --offsets: 3;
+}
+
+.about__item {
+  width: calc((100% - (var(--gap) * var(--offsets))) / (var(--offsets) + 1));
+}
+
+.about__card-image {
+  margin-bottom: 27px;
+}
+
+.about__card-title {
+  margin-bottom: 7px;
+}
+
+.form {
+  flex-direction: column;
+  max-width: 83%;
+  --offsets: 1;
+  gap: var(--gap);
+}
+
+.form__textarea-mail {
+  min-height: 150px;
+  padding: 29px 31px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  border-radius: 30px;
+  border: 1px solid var(--white-color);
+  color: var(--text-desc-color);
+  background-color: var(--text-color);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.form__wrapper {
+  justify-content: space-between;
+}
+
+.form__input {
+  padding: 24px 31px;
+  width: calc((100% - (var(--gap) * var(--offsets))) / (var(--offsets) + 1));
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  border-radius: 40px;
+  border: 1px solid var(--white-color);
+  color: var(--text-desc-color);
+  background-color: var(--text-color);
+  transition: background-color 0.3s ease-in-out;
+
+}
+
+.form__textarea-mail::placeholder,
+.form__input::placeholder {
+  color: var(--text-desc-color);
+}
+
+.form__textarea-mail:focus,
+.form__input:focus {
+  background-color: var(--bg-dark-color);
+  outline: 1px solid var(--focus-color);
+}
+
+.form__textarea-mail:hover,
+.form__input:hover {
+  background-color: var(--bg-dark-color);
+}
+
+.form__textarea-mail:active,
+.form__input:active {
+  background-color: var(--bg-dark-color);
+  color: var(--white-color);
+  outline: 1px solid var(--white-color);
+}
+
+.form__input:valid {
+  border-color: #97EE3F;
+}
+
+.form__btn {
+  padding: 25px 54px;
+  max-width: 212px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.form__checkbox {
+  user-select: none;
+  cursor: pointer;
+}
+
+.form__checkbox-input {
+  position: absolute;
+  appearance: none;
+}
+
+.form__checkbox-text {
+  position: relative;
+  padding-left: 24px;
+  color: var(--font-grey);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+}
+
+.form__checkbox-text::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 14px;
+  height: 14px;
+  border: 1px solid var(--font-grey);
+  transform: translateY(-50%);
+}
+
+.form__checkbox-text::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 14px;
+  height: 14px;
+  background-image: url("/img/checkbox.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transform: translateY(-50%);
+  transition: opacity 0.3s ease-in-out;
+}
+
+.form__checkbox-input:checked+.form__checkbox-text::after {
+  opacity: 1;
+}
+
+.form__checkbox-input:focus+.form__checkbox-text {
+  outline-offset: 5px;
+  outline: var(--focus);
+}
 
 
 
