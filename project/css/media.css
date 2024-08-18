@@ -19,8 +19,8 @@
     max-width: 48%;
   }
 
-  .about__card-image {
-    /* max-width: 90%; */
+  .footer__container::after {
+    background-repeat: no-repeat;
   }
 }
 
@@ -47,7 +47,7 @@
     margin-bottom: 23px;
   }
 
-  .nav {
+  .header__nav {
     order: 3;
     padding-top: 22px;
     padding-bottom: 22px;
@@ -140,11 +140,21 @@
     max-width: 100%;
   }
 
-.about__head::after {
-  background-image: url("/img/about__figure-dawn.svg");
-}
+  .about__head::after {
+    background-image: url("/img/about__figure-dawn.svg");
+  }
 
+  .footer__nav-list {
+    transform: translateX(131px);
+  }
 
+  .footer__left {
+    width: 30%;
+  }
+
+  .footer__nav {
+    width: 67%;
+  }
 }
 
 @media (max-width: 991px) {
@@ -281,7 +291,6 @@
 
   .about__head {
     margin-bottom: 26.1%;
-    /* margin-bottom: 141px; */
     width: 100%;
   }
 
@@ -295,19 +304,54 @@
     min-height: 100%;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url("/img/about__figure-vector.svg");
   }
 
   .form__wrapper {
     flex-direction: column;
     gap: var(--gap);
   }
-
   .form__input {
     width: 100%;
   }
 
+  .footer__container  {
+    padding-bottom: 82px;
+  }
 
+  .footer__left {
+    margin-bottom: 77px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .social__item svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  .footer__nav {
+    width: 100%;
+  }
+
+
+  .footer__nav-list {
+    --gap: 30px;
+    row-gap: var(--gap);
+    transform: translateX(0px);
+  }
+
+  /* Костыль!!!! */
+  .padding-left-95px {
+    padding-left: 95px;
+  }
+
+  .padding-left-43px {
+    padding-left: 43px;
+  }
+
+  .footer__container::after {
+    width: 222%;
+  }
 
 }
 
@@ -326,46 +370,46 @@
     line-height: 16px;
   }
   .offset-section {
-      padding-top: 54px;
+    padding-top: 54px;
   }
 
   .btn {
-      padding: 17px 45px;
-      font-size: 16px;
+    padding: 17px 45px;
+    font-size: 16px;
   }
 
   .container {
-      padding-left:  32px;
-      padding-right:  32px;
-
+    padding-left:  32px;
+    padding-right:  32px;
   }
 
   .header__container {
-      padding-top: 15px;
+    padding-top: 15px;
   }
 
   .header__logo {
-      margin-bottom: 12px;
+    margin-bottom: 12px;
   }
 
   .header__logo {
-      width: 34%;
+    width: 34%;
   }
 
-  .nav {
-      width: 105%;
-      padding-top: 14px;
-      padding-bottom: 14px;
+  .header__nav {
+    width: 105%;
+    padding-top: 14px;
+    padding-bottom: 14px;
   }
+
 
   .nav__list {
-      column-gap: 28px;
-      flex-wrap: nowrap;
-      overflow-x: auto;
+    column-gap: 28px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
   }
 
   .header__search {
-      margin-bottom: 12px;
+     margin-bottom: 12px;
   }
 
   .hero__content {
@@ -374,10 +418,10 @@
   }
 
   .hero__title {
-      font-size: 32px;
-      font-weight: 700;
-      line-height: 32px;
-      margin-bottom: 7px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 7px;
   }
 
   .hero__desc {
@@ -388,10 +432,10 @@
   }
 
   .hero__title span {
-      font-size: 32px;
-      font-style: italic;
-      font-weight: 400;
-      line-height: 32px;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 32px;
   }
 
   .podcasts__card-title {
@@ -526,7 +570,41 @@
     transform: translateY(-7px);
   }
 
+  .footer__nav-list {
+    --offsets: 1;
+  }
 
+  .footer__nav-list::before {
+    position: absolute;
+    content: '';
+    top: -50px;
+    left: -40px;
+    width: calc(100vw + 8px);
+    height: 138%;
+    background-color: var(--text-color);
+  }
+
+  .footer__nav li {
+    padding: 0;
+  }
+
+  .footer__left {
+    margin-bottom: 0;
+    padding-bottom: 101px;
+  }
+
+  .footer__nav-list {
+    --gap: 24px;
+  }
+
+  .footer__item {
+    transform: translateY(-20px);
+  }
+
+  .footer__container::after {
+    bottom: 22px;
+    width: 500%;
+  }
 }
 
 @media (max-width: 460px) {
@@ -773,5 +851,19 @@
     max-width: 172px;
   }
 
+  .footer__container {
+    padding-top: 59px;
+  }
 
+  .footer__item {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+  }
+
+  .footer__copy {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12.4px;
+  }
 }
