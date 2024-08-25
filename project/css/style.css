@@ -183,6 +183,10 @@ ul {
   line-height: 20px;
 }
 
+.header__search {
+  margin-left: 20px;
+}
+
 .nav__list {
   column-gap: 58.75px;
 }
@@ -845,17 +849,22 @@ ul {
 }
 
 .about__head {
-  position: relative;
   width: 58%;
 }
 
-.about__head::after {
+.about__head-wrapper {
+  position: relative;
+}
+
+.about__head-wrapper::after {
   content: '';
   position: absolute;
   top: 0px;
-  right: -103%;
-  min-width: 100%;
-  min-height: 100%;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  max-width: 445px;
+  max-height: 290px;
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url("/img/about__figure.svg");
@@ -888,13 +897,13 @@ ul {
 }
 
 
-/* .about__card-image {
+ .about__card-picture {
+  display: block;
   margin-bottom: 27px;
-} */
+}
 
 .about__card-title {
   margin-bottom: 7px;
-  padding-top: 27px;
 }
 
 .form {
@@ -970,7 +979,7 @@ ul {
   display: inline;
   user-select: none;
   cursor: pointer;
-  /* max-width: 290px; */
+  max-width: fit-content;
 }
 
 .form__checkbox-input {
@@ -1045,8 +1054,6 @@ ul {
   outline-offset: 4px;
   transition: outline-color 0.3s ease-in-out;
 }
-
-
 
 .footer__social {
   display: flex;

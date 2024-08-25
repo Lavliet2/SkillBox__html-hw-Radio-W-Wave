@@ -11,6 +11,10 @@
     flex-direction: column;
   }
 
+  .about__head-wrapper::after {
+    transform: translateY(25%);
+  }
+
   .wave__image::after {
     width: 25%;
   }
@@ -136,7 +140,11 @@
     max-width: 100%;
   }
 
-  .about__head::after {
+  .about__head-wrapper::after {
+    /* min-width: 50%; */
+    top: 50%;
+    transform: translateY(-44%);
+    max-width: 255px;
     background-image: url("/img/about__figure-dawn.svg");
   }
 }
@@ -193,7 +201,7 @@
     left: -137px;
     width: 100%;
     height: 91%;
-    background-image: url(/img/broadcasts-mic.png);
+    background-image: url("/img/broadcasts-mic.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -274,21 +282,29 @@
   }
 
   .about__head {
-    margin-bottom: 26.1%;
+    /* margin-bottom: 26.1%; */
     width: 100%;
   }
 
-  .about__head::after {
+  .about__head-wrapper::after {
     content: '';
     position: absolute;
-    top: unset;
-    bottom: -110%;
     right: 0;
-    min-width: 100%;
+    min-width: 121%;
     min-height: 100%;
+    top: auto;
+    bottom: 0;
+    transform: translateY(108%);
     background-size: contain;
     background-repeat: no-repeat;
+    background-image: url("/img/about__figure-vector.svg");
+
   }
+
+  .about__list {
+    padding-top: 26.1%;
+  }
+
 
   .form__wrapper {
     flex-direction: column;
@@ -773,22 +789,30 @@
     line-height: 16px;
   }
 
-  .about__head {
-    margin-bottom: 0;
+  .about__head-wrapper::after {
+    display: none;
   }
 
-  .about__head::after {
-    display: none;
+  .about__head {
+    margin-bottom: 0;
   }
 
   .about__head-desc {
     margin-bottom: 4px;
   }
 
+  .about__list {
+    padding-top: 0;
+  }
+
   .about__card-title {
     padding-top: 9px;
     margin-bottom: 4px;
   }
+
+  .about__card-picture {
+    margin-bottom: 0px;
+}
 
   .form__textarea-mail {
     min-height: 150px;
